@@ -109,9 +109,10 @@ function renderChips() {
   )
 }
 
-function renderCard(tool: Tool) {
+function renderCard(tool: Tool, index: number) {
   const article = document.createElement('article')
   article.className = 'card'
+  article.style.setProperty('--delay', `${Math.min(index, 5) * 70}ms`)
   if (favorites.has(tool.id)) article.classList.add('is-pinned')
 
   const mark = document.createElement('span')
@@ -128,7 +129,7 @@ function renderCard(tool: Tool) {
 
   const meta = document.createElement('p')
   meta.className = 'meta'
-  meta.textContent = [...tool.groups, tool.host].join(' · ')
+  meta.textContent = `${String(index + 1).padStart(2, '0')}  ·  ${[...tool.groups, tool.host].join(' · ')}`
 
   const star = document.createElement('button')
   star.type = 'button'
@@ -204,6 +205,31 @@ function render() {
       : `${visible.length} ${visible.length > 1 ? 'apps' : 'app'}`
   emptyState.hidden = visible.length > 0
   clearButton.hidden = query.length === 0
+  revealCards()
+}
+
+let revealObserver: IntersectionObserver | null = null
+
+function revealCards() {
+  const cards = [...cardList.querySelectorAll<HTMLElement>('.card')]
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  if (reduce || !('IntersectionObserver' in window)) {
+    cards.forEach((card) => card.classList.add('is-in'))
+    return
+  }
+
+  revealObserver?.disconnect()
+  revealObserver = new IntersectionObserver(
+    (entries) => {
+      for (const entry of entries) {
+        if (!entry.isIntersecting) continue
+        entry.target.classList.add('is-in')
+        revealObserver?.unobserve(entry.target)
+      }
+    },
+    { threshold: 0.22, rootMargin: '0px 0px -6% 0px' },
+  )
+  cards.forEach((card) => revealObserver?.observe(card))
 }
 
 function hexToRgba(hex: string, alpha: number) {

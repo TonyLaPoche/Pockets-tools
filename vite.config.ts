@@ -9,16 +9,16 @@ export default defineConfig({
       includeAssets: ['favicon.svg', 'apple-touch-icon.png'],
       manifest: {
         id: '/Pockets-tools/',
-        name: 'Pocket Tools',
-        short_name: 'Pocket',
-        description: 'Index des mini-apps d’Antoine Terrade.',
+        name: "Pocket's tools",
+        short_name: "Pocket's tools",
+        description: 'Les outils de poche d’Antoine Terrade.',
         lang: 'fr',
         dir: 'ltr',
         start_url: '/Pockets-tools/',
         scope: '/Pockets-tools/',
         display: 'standalone',
-        background_color: '#110f0d',
-        theme_color: '#110f0d',
+        background_color: '#050308',
+        theme_color: '#050308',
         icons: [
           {
             src: 'pwa-192.png',

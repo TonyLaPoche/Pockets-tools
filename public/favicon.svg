@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <rect width="512" height="512" fill="#110f0d"/>
-  <rect x="186" y="68" width="140" height="236" rx="18" fill="#f3ecdf"/>
-  <rect x="210" y="104" width="68" height="12" rx="6" fill="#d9cfc2"/>
-  <rect x="210" y="130" width="96" height="10" rx="5" fill="#e4d9cc"/>
-  <rect x="210" y="152" width="80" height="10" rx="5" fill="#e4d9cc"/>
-  <path fill="#f0b429" d="M72 214h368v116c0 66-56 112-128 112H200c-72 0-128-46-128-112V214z"/>
-  <path fill="#110f0d" d="M72 214c58 62 118 92 184 92s126-30 184-92v28c-58 62-118 92-184 92s-126-30-184-92v-28z"/>
+  <rect width="512" height="512" fill="#050308"/>
+  <rect x="186" y="68" width="140" height="236" rx="18" fill="#f4f4f8"/>
+  <rect x="210" y="104" width="68" height="12" rx="6" fill="#ff4d6a"/>
+  <rect x="210" y="130" width="96" height="10" rx="5" fill="#3a3a44"/>
+  <rect x="210" y="152" width="80" height="10" rx="5" fill="#3a3a44"/>
+  <path fill="#ff1f45" d="M72 214h368v116c0 66-56 112-128 112H200c-72 0-128-46-128-112V214z"/>
+  <path fill="#050308" d="M72 214c58 62 118 92 184 92s126-30 184-92v28c-58 62-118 92-184 92s-126-30-184-92v-28z"/>
 </svg>

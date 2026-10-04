@@ -1,17 +1,26 @@
 @font-face {
-  font-family: 'Fraunces Variable';
+  font-family: Orbitron;
   font-style: normal;
   font-display: swap;
-  font-weight: 100 900;
-  src: url('../node_modules/@fontsource-variable/fraunces/files/fraunces-latin-standard-normal.woff2')
-    format('woff2-variations');
+  font-weight: 700;
+  src: url('../node_modules/@fontsource/orbitron/files/orbitron-latin-700-normal.woff2')
+    format('woff2');
 }
 
 @font-face {
-  font-family: 'Outfit Variable';
+  font-family: Orbitron;
   font-style: normal;
   font-display: swap;
-  font-weight: 100 900;
-  src: url('../node_modules/@fontsource-variable/outfit/files/outfit-latin-wght-normal.woff2')
-    format('woff2-variations');
+  font-weight: 800;
+  src: url('../node_modules/@fontsource/orbitron/files/orbitron-latin-800-normal.woff2')
+    format('woff2');
+}
+
+@font-face {
+  font-family: Oxanium;
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200 800;
+  src: url('../node_modules/@fontsource-variable/oxanium/files/oxanium-latin-wght-normal.woff2')
+    format('woff2');
 }

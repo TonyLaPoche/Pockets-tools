@@ -1,4 +1,4 @@
-# Pocket Tools
+# Pocket's tools
 
 Index installable des mini-apps publiques d’[Antoine Terrade](https://github.com/TonyLaPoche).
 
