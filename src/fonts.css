@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Fraunces Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url('../node_modules/@fontsource-variable/fraunces/files/fraunces-latin-standard-normal.woff2')
+    format('woff2-variations');
+}
+
+@font-face {
+  font-family: 'Outfit Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url('../node_modules/@fontsource-variable/outfit/files/outfit-latin-wght-normal.woff2')
+    format('woff2-variations');
+}
